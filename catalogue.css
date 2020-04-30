@@ -1,0 +1,59 @@
+@font-face{
+	font-family: myFont;
+	src: url("fonts/OpenSans-Regular.ttf");
+}
+body{
+	margin: 0px;
+	font-family: myFont;
+}
+div{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.banner{
+	position: relative;
+	background-color: #ffffff;
+	width: 100%;
+    height: 600px;
+}
+.banner-logo{
+	padding: 15px 50px;
+}
+.banner-logo img{
+	width: 90px;
+}
+.topnav{
+ 	position: relative;
+ 	padding: 25px; 
+ 	width: 200px; 
+ 	height: 400px;
+ 	top: 70px;
+ 	right: -300px;
+ 	transition: right 0.3s ease-out;
+ 	background-color: #ffffff;
+ 	position: absolute;
+}
+.topnav a{
+  display: block;
+  color: #000000;
+  padding: 10px 13px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu-side-button a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 16px;
+	padding: 0px 0px 0px 0px;
+}
+.menu-side-button{
+	position: absolute;
+	height: 40px;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	width: 120px;
+	padding: 05px 0px 05px 16px;
+	background-color: #ffffff;
+	margin: 10px 0px 0px 1180px;
+}
