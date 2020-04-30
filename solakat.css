@@ -192,7 +192,7 @@ div{
 	margin-bottom: 50px;
 }
 .fifth-section-wrap .work1{
-	background-image: url("images/one (8).jpg");
+	background-image: url("images/bag.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -208,7 +208,7 @@ div{
 	padding: 0px 0px 0px 20px;
 }
 .fifth-section-wrap .work2{
-	background-image: url("images/one (7).jpg");
+	background-image: url("images/table.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -229,7 +229,7 @@ div{
 	padding: 0px 50px 0px 60px;
 }
 .sixth-section-wrap .work3{
-	background-image: url("images/one (4).jpg");
+	background-image: url("images/wide.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -250,7 +250,7 @@ div{
 	padding: 0px 50px 0px 60px;	
 }
 .seventh-section-wrap .work4{
-	background-image: url("images/one (4).jpg");
+	background-image: url("images/wide-space.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -259,7 +259,7 @@ div{
 	margin: 0px 12px 0px 12px;
 }
 .seventh-section-wrap .work5{
-	background-image: url("images/one.jpg");
+	background-image: url("images/window.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -679,7 +679,7 @@ div{
 	padding: 70px 0;
 }
 .pre-footer-section{
-	background-image: url("images/one (9).jpg");
+	background-image: url("images/stickers.jpg");
 	height: 250px;
 	position: relative;
 	width: calc(20% - 10px);
@@ -970,10 +970,13 @@ div{
 		padding: 0 25px;
 	}
 	.third-section-wrap-product{
-		padding: 10px 20px;
+		padding: 0 20px;
 	}
 	.third-section-product{
-		width: calc(100% - 10px);
-		margin: 10px 0;	
+		width: 100%;
+		margin: 10px 0;
+	}
+	.gallery-content-center img{
+		width: 100%;
 	}
 }
