@@ -122,7 +122,7 @@ div{
 	position: relative;
 	height: 250px;
 	width: calc(25% - 20px);
-	margin: 0 10px;
+	margin: 0 10px; 
 }
 .overlay{
 	color: white;
@@ -137,8 +137,9 @@ div{
 	font-size: 16px;
 }
 .third-section .overlay h3{
+	font-size: 18px;
 	text-align: center;
-	font-weight: normal;
+	font-weight: bold;
 }
 .fourth-section-wrap{
 	padding: 50px 200px;
