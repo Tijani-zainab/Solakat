@@ -1,14 +1,13 @@
-$(window).load(function () {
-
-	function love() {
+function love() {
 		var z = document.getElementById("myTopnav").style.right;
-		 if (document.getElementById("myTopnav").style.right == "0px") {
-		 	document.getElementById("myTopnav").style.right = "-300px";
+		 if (document.getElementById("myTopnav").style.top == "0px") {
+		 	document.getElementById("myTopnav").style.top = "-600px";
 		 } else {
-		 document.getElementById("myTopnav").style.right = "0px";
+		 document.getElementById("myTopnav").style.top = "0px";
 		 }
-		 alert("i");
 	}
+
+$(window).load(function () {
 
 	// var size = 1;
 	var button = 1;

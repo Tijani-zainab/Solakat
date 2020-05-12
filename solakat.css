@@ -1,6 +1,22 @@
 @font-face{
 	font-family: myFont;
 	src: url("fonts/OpenSans-Regular.ttf");
+	font-weight: normal;
+}
+@font-face{
+	font-family: myFont;
+	src: url("fonts/OpenSans-Bold.ttf");
+	font-weight: bold;
+}
+@font-face{
+	font-family: myFont;
+	src: url("fonts/OpenSans-SemiBold.ttf");
+	font-weight: 500;
+}
+@font-face{
+	font-family: myFont;
+	src: url("fonts/OpenSans-Light.ttf");
+	font-weight: 300;
 }
 body{
 	margin: 0px;
@@ -36,13 +52,13 @@ div{
 	border: none;
 }
 .menu-button .me-nu{
-	width: 30px;
+	width: 28px;
 	height: 2px;
 	background-color: #1a1a1a;
 	margin: 3px 0;
 }
 .menu-button .menu{
-	width: 20px;
+	width: 18px;
 	height: 2px;
 	background-color: #1a1a1a;
 	margin: 3px 0;
@@ -50,20 +66,54 @@ div{
 .topnav{
  	position: fixed;
  	z-index: 10;
- 	padding: 25px; 
- 	width: 200px; 
- 	height: 400px;
- 	top: 70px;
- 	right: -300px;
- 	transition: right 0.3s ease-out;
+ 	padding: 0px 20px; 
+ 	width: 100%;
+ 	height: 600px;
+ 	top: -600px;
+ 	transition: top 0.3s ease-out;
  	background-color: #ffffff;
+ 	float: right;
+ 	border: none;
 }
 .topnav a{
-  display: block;
+  display: inline-block;
   color: #000000;
-  padding: 10px 13px;
+  padding: 10px 0px;
+  width: 200px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 130px;
+  letter-spacing: 1px;
+}
+.topnav a.wide{
+	display: block;
+}
+.menu-item{
+	padding: 50px 250px;
+}
+.menu-close-button{
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	float: right;
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.menu-close-button img{
+	width: 30px;
+}
+.menu-button-inside{
+	margin-right: 150px;
+	background-color: transparent;
+	border: none;
+}
+.menu-button img{
+	width: 90px;
+	float: right;
 }
 .menu-side-button{
 	color: #000000;
@@ -78,13 +128,15 @@ div{
 .banner{
 	overflow: hidden;
 	background-color: #ffffff;
-	width: 100%;
 	height: 100vh;
 	min-height: 500px;
 }
 .banner-text h1{
 	text-align: center;
-	font-size: 65px;
+	font-size: 60px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	line-height: 1.4;
 }
 .banner-text .color{
 	color: #0086b3;
@@ -96,24 +148,25 @@ div{
 	display: inline-block;
 	padding: 10px 40px;
 	text-decoration: none;
-	color: #000000;
-	font-weight: bold; 
+	font-weight: 500;
+	color: #000000; 
 	font-size: 18px;
 	border: 2px solid #000000;
 	border-radius: 5px;
 	background-color: #ffffff;
 }
-.second-section h1{
-	font-size: 50px;
-}
 .second-section{
-	padding: 0px 450px 100px; 
+	padding: 0px 400px 60px; 
 	background-color: #ffffff;
 	text-align: center;
-	line-height: 25px;	
+	letter-spacing: 1px;	
+	font-size: 16px;
+	line-height: 1.5;
 }
-.third-section-wrap{
-	padding: 0 10px;
+.second-section h1{
+	margin: 0;
+	font-size: 50px;
+	font-weight: 500;
 }
 .third-section{
 	background-position: center;
@@ -121,8 +174,15 @@ div{
 	background-size: cover;
 	position: relative;
 	height: 250px;
-	width: calc(25% - 20px);
-	margin: 0 10px; 
+	width: calc(25% - 10px);
+	margin: 0 5px; 
+}
+.third-section h3{
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	letter-spacing: normal;
 }
 .overlay{
 	color: white;
@@ -133,16 +193,23 @@ div{
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.8);
-	padding: 10px 15px 0px 15px;
-	font-size: 16px;
+	padding: 20px 50px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
-.third-section .overlay h3{
-	font-size: 18px;
-	text-align: center;
-	font-weight: bold;
+.read-more-btn{
+	display: inline-block;
+	padding: 3px 15px;
+	text-decoration: none;
+	font-size: 12px;
+	border: 1px solid #ffffff; 
+	border-radius: 5px;
+	color: #ffffff;
+	margin-top: 15px;
 }
 .fourth-section-wrap{
-	padding: 50px 200px;
+	padding: 100px 200px 50px;
 }
 .fourth-section{
 	width: 40%;
@@ -154,10 +221,14 @@ div{
 }
 .fourth-section h1{
 	margin-top: 0;
+	font-size: 50px;
+	font-weight: 500;
 }
 .fourth-section-side{
 	width: 60%;
+	letter-spacing: 1px;	
 	font-size: 16px;
+	line-height: 1.5;
 }
 .fourth-section-side a{
 	text-decoration: none;
@@ -166,11 +237,12 @@ div{
 }
 .js-number{
 	width: 30%;
-	padding: 50px 0; 
+	padding: 50px 0;
 }
 .js-number span{
 	color: green;
 	font-size: 40px;
+	font-weight: 500; 
 }
 .js-number2{
 	width: 30%;
@@ -179,17 +251,16 @@ div{
 .fourth-section-wrap .js-number2 span{
 	color: blue;
 	font-size: 40px;
+	font-weight: 500; 
 }
 .fifth-section-wrap{	
-	width: 100%;
-	height: 500px;
 	background-color: #ffffff;
-	padding: 0px 50px 0px 60px;
+	padding: 0px 120px;
 }
 .fifth-section-wrap p{
-	font-size: 22px;
+	font-size: 25px;
 	text-align: center;
-	font-weight: bold;
+	font-weight: 500;
 	margin-bottom: 50px;
 }
 .fifth-section-wrap .work1{
@@ -198,15 +269,16 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: calc(60% - 24px);
-	height: 400px;
+	height: 350px;
 	margin: 0px 12px 0px 12px;
 }
 .work1 .work1-text{
 	color: #ffffff;
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: 300;
 	text-align: left;
-	font-weight: normal;
 	padding: 0px 0px 0px 20px;
+	letter-spacing: 1px;
 }
 .fifth-section-wrap .work2{
 	background-image: url("images/table.jpg");
@@ -214,20 +286,20 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: calc(40% - 24px);
-	height: 400px;
+	height: 350px;
 	margin: 0px 12px 0px 12px;
 }
 .work2 .work2-text{
 	color: #ffffff;
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: 300;
 	text-align: left;
-	font-weight: normal;
 	padding: 0px 0px 0px 20px;
+	letter-spacing: 1px;
 }
 .sixth-section-wrap{
-	height: 450px;
 	background-color: #ffffff;
-	padding: 0px 50px 0px 60px;
+	padding: 0px 120px;
 }
 .sixth-section-wrap .work3{
 	background-image: url("images/wide.jpg");
@@ -235,20 +307,20 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: calc(100% - 24px);
-	height: 400px;
-	margin: 25px 12px 0px 12px;
+	height: 350px;
+	margin: 25px 12px 25px 12px;
 }
 .work3 .work3-text{
 	color: #ffffff;
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: 300;
 	text-align: left;
-	font-weight: normal;
 	padding: 0px 0px 0px 20px;
+	letter-spacing: 1px;
 }
 .seventh-section-wrap{
-	width: 100%;
 	background-color: #ffffff;
-	padding: 0px 50px 0px 60px;	
+	padding: 0px 120px;	
 }
 .seventh-section-wrap .work4{
 	background-image: url("images/wide-space.jpg");
@@ -256,7 +328,7 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: calc(40% - 24px);
-	height: 400px;
+	height: 350px;
 	margin: 0px 12px 0px 12px;
 }
 .seventh-section-wrap .work5{
@@ -265,49 +337,52 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: calc(60% - 24px);
-	height: 400px;
+	height: 350px;
 	margin: 0px 12px 0px 12px;
 }
 .all-work{
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px 0 50px;
 }
 .after-work-button{
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 40px;
 	text-decoration: none;
-	color: #000000;
-	font-weight: bold; 
+	font-weight: 500;
+	color: #000000; 
 	font-size: 18px;
 	border: 2px solid #000000;
 	border-radius: 5px;
 	background-color: #ffffff;
 }
 .eight-section-wrap{
-	padding: 0 50px;
+	padding: 50px 120px 0px 120px;
 }
-.eight-section-wrap p{
+.eight-section-wrap {
 	font-size: 22px;
-	font-weight: bold;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1.5;
 	text-align: left;
 }
 .ninth-section-wrap{
-	padding: 50px 50px;
+	padding: 20px 120px 90px;
 }
 .ninth-section-wrap img{
 	height: 70px;
-	margin: 20px 50px;
+	margin: 20px 80px 20px 0px;
 	display: inline-block;
 }
 .eleven-section-wrap{
 	border-color: #ffffff;
-	padding: 0 50px;
+	padding: 0 120px;
 }
-.eleven-section-wrap p{
+.eleven-section-wrap h2{
 	font-size: 22px;
-	font-weight: bold;
+	padding-bottom: 20px;
 }
 .testimony1-wrap{
+	min-height: 200px;
 	width: 50%;
 	padding: 0px 20px;
 }
@@ -320,31 +395,47 @@ div{
 }
 .testimony1-wrap .testimony1-text{
 	width: 70%;
-	padding-left: 50px;
+	padding-left: 30px;
 	font-size: 16px;
-	font-weight: bold;
+	letter-spacing: 1px;
 }
 .testimony1-wrap .testimony1-text h3 {
 	margin-top: 0;
+	margin-bottom: 10px;
 }
 .testimony1-wrap .testimony1-text span{
 	color: #33cc00;	
+	font-weight: normal;
 }
 .testimonials-button{
+	display: inline-block;
+	padding: 10px 40px;
+	text-decoration: none;
+	font-weight: 500;
+	color: #000000; 
+	font-size: 18px;
 	border: 2px solid #000000;
 	border-radius: 5px;
-	margin-top: 20px;
-	padding: 10px 30px;
-	display: inline-block;
 	background-color: #ffffff;
-	text-decoration: none;
-	color: #000000;
-	font-weight: bold; 
-	font-size: 18px;
+}
+.twelve-section{
+	padding: 0 200px;
+	margin-top: 80px;
 }
 .get-in-touch{
 	text-align: center;
-	padding: 50px 0px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	color: #666666;
+}
+.get-in-touch h1{
+	margin-top: 0;
+	color: #000000;
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: 500;
 }
 .input{
 	width: 50%;
@@ -353,47 +444,56 @@ div{
 .input input{
 	outline: none;
 	border: none;
-	font-size: 18px;
-	width: 50%;
-  	border-bottom: 2px solid grey;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 5px;
+	width: 60%;
+  	border-bottom: 1px solid #666666;
 }
 .input-mail{
-	display: inline-block;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
 }
 .input-mail input{
 	outline: none;
 	border: none;
 	width: 50%;
-	font-size: 18px;
-  	border-bottom: 2px solid grey;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 5px;
+  	border-bottom: 1px solid #666666;
+  	margin-right: 20px;
 }
 .send-message{
 	text-align: center;
 	padding: 50px 0;
 }
 .form-button{
-	padding: 10px 30px;
+	display: inline-block;
+	padding: 10px 40px;
+	text-decoration: none;
+	font-weight: 500;
+	color: #000000; 
+	font-size: 18px;
 	border: 2px solid #000000;
 	border-radius: 5px;
 	background-color: #ffffff;
-	text-decoration: none;
-	color: #000000;
-	font-weight: bold; 
-	font-size: 18px;
 }
 .form-wrap{
 	text-align: center;
 	padding: 50px 0;
 }
 .sign-up-button{
-	padding: 10px 30px;
+	display: inline-block;
+	padding: 10px 40px;
+	text-decoration: none;
+	font-weight: 500;
+	color: #000000; 
+	font-size: 18px;
 	border: 2px solid #000000;
 	border-radius: 5px;
 	background-color: #ffffff;
-	text-decoration: none;
-	color: #000000;
-	font-weight: bold; 
-	font-size: 18px;
 }
 .footer{
 	background-color: #000000;
@@ -813,6 +913,19 @@ div{
 	}
 	.menu-button{
 		margin-right: 20px;
+	}
+	.menu-item{
+		padding: 25px 50px;
+	}
+	.topnav{
+		height: 500px;
+	}
+	.topnav a{
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.topnav a.wide{
+		display: inline-block;
 	}
 	.banner{
 		min-height: 0px;
