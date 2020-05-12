@@ -941,7 +941,7 @@ div{
 		font-size: 30px;
 	}
 	.third-section-wrap{
-		padding: 20px;
+		padding: 0 20px;
 	}
 	.third-section{
 		width: 100%;
@@ -952,10 +952,14 @@ div{
 	}
 	.fourth-section{
 		width: 100%;
-		padding: 
+	}
+	.fourth-section h1{
+		font-size: 30px;
 	}
 	.fourth-section-side{
 		width: 100%;
+		font-size: 16px;
+		text-align: center;
 	}
 	.js-number{
 		padding: 30px 0px; 
@@ -966,7 +970,7 @@ div{
 		width: 50%;
 	}
 	.js-number2 span{
-		font-size: 25px;
+		font-size: 18px;
 	}
 	.js-number span{
 		font-size: 25px;
@@ -1007,6 +1011,10 @@ div{
 		height: 200px;
 		margin: 10px 0;
 	}
+	.eight-section-wrap{
+		padding: 20px 20px;
+		font-size: 18px;
+	}
 	.eleven-section-wrap .eight-section-wrap{
 		padding: 0 25px; 
 	}
@@ -1017,6 +1025,9 @@ div{
 	.ninth-section-wrap img{
 		width: 25%;
 	} 
+	.eleven-section-wrap{
+		padding: 0 30px;
+	}
 	.testimony1-wrap img{
 		width: 80%;
 		display: block;
