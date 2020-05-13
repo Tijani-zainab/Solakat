@@ -1,9 +1,18 @@
 function love() {
-		var z = document.getElementById("myTopnav").style.right;
+		var z = document.getElementById("myTopnav").style.top;
 		 if (document.getElementById("myTopnav").style.top == "0px") {
 		 	document.getElementById("myTopnav").style.top = "-600px";
 		 } else {
 		 document.getElementById("myTopnav").style.top = "0px";
+		 }
+	}
+
+function light() {
+		var z = document.getElementById("myTestimony").style.top;
+		 if (document.getElementById("myTestimony").style.top == "0px") {
+		 	document.getElementById("myTestimony").style.top = "-100%";
+		 } else {
+		 document.getElementById("myTestimony").style.top = "0px";
 		 }
 	}
 

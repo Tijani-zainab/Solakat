@@ -177,13 +177,6 @@ div{
 	width: calc(25% - 10px);
 	margin: 0 5px; 
 }
-.third-section h3{
-	text-align: center;
-	font-size: 18px;
-	font-weight: normal;
-	margin-bottom: 5px;
-	letter-spacing: normal;
-}
 .overlay{
 	color: white;
 	position: absolute;
@@ -197,6 +190,16 @@ div{
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 300;
+}
+.overlay h3{
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	letter-spacing: normal;
+}
+.overlay.text-center{
+	text-align: center;
 }
 .read-more-btn{
 	display: inline-block;
@@ -408,6 +411,11 @@ div{
 	font-weight: normal;
 }
 .testimonials-button{
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+.testimonials-button{
 	display: inline-block;
 	padding: 10px 40px;
 	text-decoration: none;
@@ -418,9 +426,26 @@ div{
 	border-radius: 5px;
 	background-color: #ffffff;
 }
+.header-text{
+	width: auto;
+}
+.header-text h2{
+	font-weight: 500;
+	font-size: 25px;
+}
 .twelve-section{
 	padding: 0 200px;
 	margin-top: 80px;
+}
+.more-testimony-wrap{
+	position: fixed;
+	height: 100%;
+	top: -100%;
+	transition: top 0.3s ease-out;
+ 	background-color: #ffffff;
+ 	padding: 25px 120px;
+ 	overflow: hidden;
+ 	overflow-y: scroll;
 }
 .get-in-touch{
 	text-align: center;
@@ -498,6 +523,7 @@ div{
 .footer{
 	background-color: #000000;
 	padding: 50px 50px;
+	letter-spacing: 1px;
 }
 .first-footer{
 	width: 33.333%;
@@ -507,6 +533,7 @@ div{
 	line-height: 50px;
 	text-decoration: none;
 	font-size: 16px;
+	font-weight: 300;
 }
 .second-footer{
 	width: 33.333%;
@@ -516,12 +543,43 @@ div{
 	line-height: 50px;
 	text-decoration: none;
 	font-size: 16px;
+	font-weight: 300;
 }
 .third-footer{
 	width: 33.333%;
 	color: #ffffff;
 	font-size: 16px;
+	font-weight: 300;
 }
+.footer-address{
+	line-height: 1.5;
+	padding: 0 0 0 50px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	position: relative;
+}
+.footer-address img{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 10px;
+	top: 0;
+}
+.footer-address span{
+	font-weight: normal;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.social-icons{
+	padding: 0 20px;
+}
+.social-icons img{
+	width: 25px;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
 
 
 /*product-page css*/
@@ -1045,9 +1103,25 @@ div{
 		padding: 10px 0;
 		text-align: center;
 	}
+	.testimonials-button-wrap{
+		text-align: center;
+	}
 	.testimonials-button{
 		font-size: 16px;
 		padding: 5px 15px;
+	}
+	.more-testimony-wrap{
+		padding: 20px 30px;
+ 		overflow: hidden;
+ 		overflow-y: scroll;
+	}
+	.header-text h2{
+		font-size: 20px;
+		margin: 0;
+	}
+	.menu-close-button img{
+		width: 25px;
+		margin-top: 0;
 	}
 	.get-in-touch h1{
 		font-size: 25px;
@@ -1058,12 +1132,13 @@ div{
 		margin-bottom: 20px;
 	}
 	.twelve-section{
+		margin-top: 60px;
 		padding: 0px 0px 50px;
 	}
 	.input{
 		width: 100%;
 		margin: 20px 0;
-		padding: 0 25px;
+		padding: 0 50px;
 	}
 	.input input{
 		width: 100%;
@@ -1085,15 +1160,44 @@ div{
 		padding: 5px 15px;
 		font-size: 16px;
 	}
+	.footer{
+		padding: 50px 50px;
+	}
 	.first-footer{
 		width: 100%;
+		font-size: 14px;
+	}
+	.first-footer a{
+		line-height: 40px;
 	}
 	.second-footer{
 		width: 100%;
+		font-size: 14px;
+	}
+	.second-footer a{
+		line-height: 40px;
 	}
 	.third-footer{
 		width: 100%;
+		font-size: 14px;
 	}
+	.footer-address{
+		padding: 0;
+	}
+	.footer-address img{
+		position: unset;
+	}
+	.footer-address span{
+		line-height: 30px;
+	}
+	.social-icons{
+		padding: 0;
+	}
+	.social-icons img{
+		margin-top: 20px;
+		margin-right: 5px;
+	}
+
 
 
 	/*product page*/
