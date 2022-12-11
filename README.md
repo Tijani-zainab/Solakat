@@ -1,7 +1,8 @@
 # Solakat 📽️
 
-Written in HTML, CSS, and VanillaJS.
+#### _Written in HTML, CSS, and VanillaJS._
 [Preview Website](https://solakat.netlify.app) 🔗
 
-solakat is one of the project i'm proud to have done as a newbie. with a bit of an heartbreaking back story it turns out okay.
+~ Solakat is an Ecommerce printing company !
+~ developed as a new devloper learning the building blocks of the web ! 
 #### By [Zayne](https://github.com/Tijani-zainab) 👧🏾 
